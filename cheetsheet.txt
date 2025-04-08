@@ -1,0 +1,65 @@
+MongoDB commands for databases.....
+
+View all databases:
+show dbs
+
+
+Create a new or switch databases:
+use dbName
+
+View current Database
+db
+
+
+Delete Database
+db.dropDatabase()
+
+*...............*.................*................*..............*............*............*
+
+MongoDB commands for collections......
+
+For showing Collections
+show collections
+
+
+Create a colllection named 'comments'
+db.createCollection('comments')
+
+
+Delete collections
+
+db.collection name.drop()
+
+*..................*............*..............*...............*..............*..............*
+
+
+MongoDB commands for Rows:
+
+Show all Rows in a collection
+db.comments.find()
+
+Insert One Rows:
+db.comments.insert({
+    name:'Saadi',
+    lang:'JavaScript',
+    member_since:5
+})
+
+Insert many Rows:
+db.comments.insertMany([{
+    'name':'Ali',
+    'lang':'Python',
+    'member_since':3
+},
+ {
+    'name':'Afshu',
+    'lang':'C++',
+    'member_since':4
+},
+ {
+    'name':'Afshu',
+    'lang':'C++',
+    'member_since':4
+
+}])
+
